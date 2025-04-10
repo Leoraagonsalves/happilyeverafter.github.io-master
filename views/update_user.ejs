@@ -1,0 +1,89 @@
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter sp">
+               <a href="/dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"></path>
+              </svg> <span class="text-gradient"> Go Back</span></a>
+           </div>
+        </div>
+        <div class="form-title text-center">
+            <h2 class="text-dark update-user-haeding-1-0" >Update User</h2>
+            <span class="text-light" >Use the below form to Update an account</span>
+        </div>
+
+        <!-- add user form -->
+         <!-- form handling -->
+         <div class="form-vendorform-main">
+            <div class="form-vendorform-main1">
+                <div class="form-vendorform-left">
+                    <img src="https://th.bing.com/th/id/R.256bcb08d925d2a6587bbaa6fc7f719d?rik=r83PsX1jK3BLkg&riu=http%3a%2f%2fpendleyparty.com%2fwp-content%2fuploads%2f2018%2f10%2fwedding-events-image-13-1024x1536.jpg&ehk=5Cy6UtUYB%2bRUKdu3%2btZpjP4uMEqcM79z%2bz2LCaBPOME%3d&risl=&pid=ImgRaw&r=0" style="height: 100%;"alt="">
+        
+                </div>
+                <div class="form-vendorform-right">
+                    <div class="form-vendorform-right1">
+                   <form id="update_user" method="POST">
+                    <input type="hidden" name="id" value="<%= vendor._id %>">
+                       <header>Vendor Details</header>
+                       <label for="">Display Name</label>
+                       <input name="userDisplayName" value="<%= vendor.userDisplayName %> "class="input-vendor-form" type="text"  >
+                       <label for="">Brand Name</label>
+                       <input name="name" value="<%= vendor.name %> "class="input-vendor-form" type="text"  >
+                       <label for="">Description</label>
+                       <textarea name="description"  class="input-vendor-form" name="description" cols="48" rows="5"><%= vendor.description %></textarea>
+                       <label for="">Choose a category</label>
+                       <select name="categorie" class="input-vendor-form">  
+                        <option value="<%= vendor.type %>"><%= vendor.type %>   
+                        </option>  
+                        <option value = "photographer"> Photographers   
+                        </option>  
+                        <option value = "makeup"> Makeup  
+                        </option>  
+                        <option value = "bridalwear"> Bridal Wear </option>  
+                        <option value = "groomwear"> Groom Wear </option>  
+                        <option value = "musicanddance"> Music & Dance </option>  
+                        <option value = "florist"> Florist </option>  
+                        <option value = "food"> Food </option>  
+                        <option value = "mehndi"> Mehndi </option>  
+                        <option value = "planninganddecor"> Planning & Decor </option>  
+                        <option value = "invites"> Invites & Gifts </option>  
+                        <option value = "jewellary"> Jewellary & Accessories </option>  
+                        <option value = "Honey Moon"> Honey Moon </option>  
+                        <option value = "lawns"> Lawns </option>  
+                        <option value = "resorts"> Resorts </option>  
+                        <option value = "hotels"> Hotels </option>  
+                        <option value = "destinationwedding"> Destination Wedding </option>
+                        <option value = "banquethalls"> Banquet Halls </option>
+                        </select>
+                        <label for="">Choose a Location</label>
+                        <select name="locate" class="input-vendor-form">  
+                            <option value="<%= vendor.location %>"><%= vendor.location %>   
+                            </option>
+                        <option value = "choose a category"> Location</option>   
+                        <option value = "Mumbai"> Mumbai </option>  
+                        <option value = "pune"> Pune </option>  
+                        <option value = "Thane"> Thane </option>  
+                        <option value = "Hyderabad"> Hyderabad </option>  
+                        <option value = "Chennai"> Chennai </option>  
+                        <option value = "Kolkata"> Kolkata </option> 
+                        <option value = "Delhi"> Delhi </option>
+                        </select> 
+                        <label for="" >Price</label>
+                        <input name="price" value="<%= vendor.price %>"class="input-vendor-form"  type="number">
+                        <label for=""> Upload Photos</label>
+                        <input name="img" class="input-vendor-form" value="<%= vendor.img %>" type="text" accept="image/*">
+                        <div class="update-user-submit-button">
+                        <button class="input-vendor-form-submit" type="submit">Submit</button>
+                        <!-- <button type="submit" class="btn text-dark update">Save</button> -->
+                        </div>
+                   </form>
+                    </div>
+                </div>
+        
+            </div>
+        
+        
+        </div>
+       
+    </div>
+</main>

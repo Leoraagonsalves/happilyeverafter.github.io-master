@@ -1,0 +1,244 @@
+<%let avg=0 %>
+<%for (let i = 0; i < vendor.review.length; i++) { %>
+   <% avg=avg+parseInt(vendor.review[i].rating);%>
+   
+  <%}%>
+  <% avg=avg/vendor.review.length; %> 
+  <%avg=parseFloat(avg).toFixed(1) %>
+<div class="vendor_profile">
+    <div>
+        <div class="min_container">
+            <div class="profile_width">
+                <div class="two_column_view">
+                    <div class="left_side">
+                        <div class="vendor_head">
+                            <div class="profile_pic">
+                                <img src="<%= vendor.img %>" alt="vendor Photo" id="vendor_profile-pic">
+                            </div>
+                            <div class="info-box">
+                                <div class="infoin1">
+                                    <div class="fcol">
+                                        <div class="frow1">
+                                            <div class="frowc1">
+                                                <div class="vendor_details">
+                                                    <h1 class="mod"><%= vendor.userDisplayName %> </h1>
+                                                </div>
+                                                <div class="vendor_address">
+                                                    <div class="addl">
+                                                        <i class="marker"></i>
+                                                    </div>
+                                                    <div class="addr">
+                                                        <h6 class="add"><span><%= vendor.location %></span>
+                                                            
+                                                        </h6>
+                                                        <p class="pa"><%= vendor.userDisplayName %>, India</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frowc2">
+                                                <span class="sp1"><i class="star"></i><%= avg %> </span>
+                                                <h6 class="dp"><%= vendor.review.length %>  reiews</h6>
+                                            </div>
+                                        </div>
+                                        <div class="frow2">
+                                            <h6 class="phone">
+                                                ₹ <%=vendor.price%>/Per Event
+                                            </h6>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        
+                        
+                    </div>
+                    <div class="right_side">
+                        <div class="vendor_pricing">
+                            <div>
+                                <div class="vendorp1">
+                                    <h6 class="vh">Hi, <%= user.userDisplayName %></h6>
+                                    
+                                </div>
+                                
+                                
+                                <div class="vendorR">
+                                    <div class="vendorR1">
+                                        
+                                            <div class="vendorR2">
+                                                <div class="vendorR3">
+                                                    <div class="vendorR4">
+                                                        <p class="vendorp">Rental Only</p>
+                                                        <h6 class="vendorh6"></h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="send_inquiry">
+                            
+                            <div class="inquiry_form">
+                                <div class="form_headding">
+                                    <p class="fp">Contact <%=vendor.userDisplayName%></p>
+                                </div>
+
+                                
+                                <form action="/contactvend" method="post" class="vform">
+                                    <div class="vform0">
+                                        <div class="vform1">
+                                            <div class="vf">
+                                                <div class="vf1">
+                                                    <div class="vf2">
+                                                        <input name="fullname" type="text" placeholder="Full name"
+                                                             aria-invalid="false" class="vf3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vff">
+                                                <div class="vff1">
+                                                    <div class="vff2">
+                                                        <div class="vff3">
+                                            
+                                                            <input name="tel" type="tel" placeholder="Mobile number" class="vff4">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="vform2">
+                                            <div class="vf">
+                                                <div class="vf1">
+                                                    <div class="vf2">
+                                                        <input  name="email" type="email" placeholder="Email-address"
+                                                             aria-invalid="false" class="vf3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="vf" format="yyyy-MM-dd">
+                                                <div class="vf11">
+                                                    <input  placeholder="Function date*"
+                                                         type="date" class="vf3" name="date">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                       
+
+                                    </div>
+                                    <div class="vform4">
+                                        <div class="send_inquiry1">
+                                            <div class="btn">
+                                                <div class="anbtn zz">
+                                                    <input type="hidden" name="usercontact" value="<%= user.id %>">
+                                                    <input type="hidden" name="vendorcontact" value="<%= vendor.username%>">
+                                                    <button class="btninfo" type="submit">Send Message</button>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="vf42">Complete information ensures you get accurate and timely
+                                            vendor responses. The representative of vendor will get back to you within 24 hours.</div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="discription">
+                    <div class="discription1">
+                        <div class="discription2">
+                            <h2 class="dis_head">
+                                About <%=vendor.userDisplayName%>,
+                                <!-- <span>
+                                    &nbsp;Devanahalli,&nbsp;
+                                </span>
+                                Bangalore -->
+                            </h2>
+                            <div class="dis_body">
+                               <div class="dis_body1">
+                                <%=vendor.description  %> 
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="vendor-page-review-vendor">
+    <div class="vendor-page-review-vendor-container">
+        <div class="vendor-page-review-vendor-title">
+            Review Vendor
+        </div>
+        <div class="vendor-page-review-vendor-content">
+        
+        <form  action="/reviewvendor" method="POST">
+            <div class="review-vendor-rating vendor-page-review-vendor-stars">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+               
+                
+                
+            </div>
+            <input type="hidden" name="vend" value="<%=vendor.id%>">
+            <input type="hidden" name="author"  <% if (req.isAuthenticated()) { %>
+                value="<%=user.userDisplayName%> <% } %> ">
+
+
+            <textarea placeholder="Share us your experience..." class="vendor-review-text-review" name="rev" id="" cols="80" rows="5"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+        <hr>
+        <div class="vendor-review-by-customer">
+            <div class="vendor-page-review-vendor-title">
+                Reviews
+            </div>
+            
+            
+            <div class="vendor-review-by-customer-view-all">
+                <% for( let i = 0; i < vendor.review.length; i++ ) { %>
+                    <% if (vendor.review[i]!= undefined) { %>
+                        <hr>
+                        <div class="vendor-review-by-customer-view-container">
+                            <div class="vendor-review-by-customer-view-heading">
+                                <p><%= vendor.review[i].author%></p> <div class="vendor-review-by-customer-view-heading-star"><%= vendor.review[i].rating %> </div>
+                            </div>
+                            <div class="vendor-review-by-customer-view-container-content">
+                                <%= vendor.review[i].rev %> 
+                            </div>
+                        </div>
+                        <hr>
+                    <% } %>
+                   
+                    <% } %>
+                
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+ 

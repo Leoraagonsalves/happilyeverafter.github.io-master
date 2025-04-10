@@ -1,0 +1,373 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.review-website-vendors-main{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review-website-vendors-main-sub{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.review-website-vendors-main-heading{
+  font-size: larger;
+  font-weight: 600;
+}
+.review-website-vendors-main-sub form{
+  margin-top: 30px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.review-vendor-name{
+  width: 80%;
+}
+.review-vendor-name input{
+  border: 2px solid #215732;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+
+}
+.review-vendor-name label{
+  text-align: left;
+  margin: 0;
+  font-weight: 600;
+  margin-left: 20px;
+}
+.review-vendor-description-page{
+  width: 80%;
+  margin-top: 20px;
+}
+.review-vendor-description-page label{
+  text-align: left;
+  margin: 0;
+  font-weight: 600;
+  margin-left: 20px;
+
+}
+.review-vendor-description-page textarea{
+  border: 2px solid #215732;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.review-vendor-submit-button{
+  margin-top: 30px;
+  
+
+}
+.review-vendor-submit-button button{
+  padding: 12px 22px 12px 22px;
+  background-color: #215732;
+  color: white;
+  border-radius: 10px;
+
+}
+.review-vendor-submit-button button:hover{
+  padding: 10px 20px 10px 20px;
+  background-color: #ffffff;
+  color: #215732;
+  border-radius: 10px;
+  border: 2px solid #215732;
+
+}
+
+.review-vendor-rating {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+.review-vendor-rating:not(:checked) > input {
+  position:absolute;
+  top:-9999px;
+}
+.review-vendor-rating:not(:checked) > label {
+  float:right;
+  width:1em;
+  overflow:hidden;
+  white-space:nowrap;
+  cursor:pointer;
+  font-size:30px;
+  color:#ccc;
+}
+.review-vendor-rating:not(:checked) > label:before {
+  content: '★ ';
+}
+.review-vendor-rating > input:checked ~ label {
+  color: #ffc700;    
+}
+.review-vendor-rating:not(:checked) > label:hover,
+.review-vendor-rating:not(:checked) > label:hover ~ label {
+  color: #deb217;  
+}
+.review-vendor-rating > input:checked + label:hover,
+.review-vendor-rating > input:checked + label:hover ~ label,
+.review-vendor-rating > input:checked ~ label:hover,
+.review-vendor-rating > input:checked ~ label:hover ~ label,
+.review-vendor-rating > label:hover ~ input:checked ~ label {
+  color: #c59b08;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.catogeries-home{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.catogeries-home-head{
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  
+  
+}
+.catogeries-text{
+  font-size: larger;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 600;
+  color: black;
+  
+}
+.catogeries-head-left{
+  font-weight: 600;
+  font-size: 25px;
+}
+.catogeries-text a{
+  text-decoration: none;
+  color: black;
+}
+
+.catogeries-body-home{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+.catogeries-menu{
+  margin: 10px;
+  
+}
+.catogeries-menu a{
+  text-decoration: none;
+}
+.catogeries-menu-box{
+  width: 580px;
+  height: auto;
+  background-color: rgb(240, 224, 191);
+}
+.catogeries-box-contant{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+  outline: none;
+}
+.catogeries-box-text{
+  width: 330px;
+  height: 120px;
+  padding-left: 20px;
+  
+  display: flex;
+  align-items: center;
+}
+.catogeries-box-text-sub{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.catogeries-box-text-1{
+  white-space: pre-wrap;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+}
+.catogeries-box-text-2{
+  width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: left;
+  font-family: 'Roboto Slab', serif;
+  color: black;
+
+}
+.catogeries-box-img{
+  height: 120px;
+  width: 250px !important;
+
+
+}
+.catogeries-box-img img{
+  clip-path: ellipse(99% 140px at 100% 50%);
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.hubslider-hubcad-home{
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #ffffff;
+}
+
+.hubslider{
+    max-width: 1100px;
+    display: flex;
+  }
+  .hubslider .hubcad{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+  }
+  .hubslider .hubcad .hubimg{
+    height: 200px;
+    width: 100%;
+  }
+  .hubslider .hubcad .hubimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .hubslider .hubcad .hubcontent{
+    padding: 10px 20px;
+  }
+  .hubcad .hubcontent .hubtitle{
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .hubcad .hubcontent .sub-hubtitle{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
+  }
+  .hubcad .hubcontent p{
+    text-align: justify;
+    margin: 10px 0;
+  }
+  .hubcad .hubcontent .hubbtn{
+    display: block;
+    text-align: left;
+    margin: 10px 0;
+  }
+  .hubcad .hubcontent .hubbtn button{
+    background: #215732;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+    width: 120px;
+  }
+  .hubcad .hubcontent .hubbtn button:hover{
+    transform: scale(0.9);
+  }
+  
+  .owl{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1024px){
+    .catogeries-menu-box{
+      width: 800px;
+    }
+    .catogeries-box-text-2{
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 375px){
+      .catogeries-body-home{
+          width: 100%;
+      }
+      .catogeries-menu-box{
+          width: 300px;
+      }
+      .catogeries-box-text-2{
+          width: 120px;
+      }
+      .catogeries-box-text{
+          width: 130px;
+      }
+      .catogeries-head-left{
+          font-size: 15px;
+      }
+      .catogeries-home-head{
+          margin: 15px;
+          margin-left: 0px;
+          margin-right: 0;
+      }
+      .catogeries-head-right{
+          font-size: 12px;
+      }
+    }

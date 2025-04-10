@@ -1,0 +1,45 @@
+<div class="website-blogs-page-all">
+  <div class="website-blogs-page-all-sub">
+    <div class="container">
+      <div class="row">
+        <% vendor.forEach(vendor => { %> 
+
+        <div class="col-md-4">
+          <div class="blog-card blog-card-blog">
+            <div class="blog-card-image">
+              <a href="/<%=vendor._id%>?blog=blog">
+                <img class="" src="<%=vendor.img[1]%>" />
+              </a>
+              <div class="ripple-cont"></div>
+            </div>
+            <div class="blog-table">
+              <h6 class="blog-category blog-text-success">
+                 Blog
+              </h6>
+              <h4 class="blog-card-caption">
+                <a href="/<%=vendor._id%>?blog=blog"><%=vendor.title %></a>              </h4>
+              <p class="blog-card-description">
+                <%=vendor.description[0].slice(0,99)%>
+              </p>
+              <div class="ftr">
+                <div class="author">
+                  <a href="/<%=vendor._id%>?blog=blog">
+                    <img
+                      src="https://picsum.photos/id/1005/5760/3840"
+                      alt="..."
+                      class="avatar img-raised"
+                    />
+                    <span><%=vendor.username %></span>
+                  </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+         <% }) %>
+      </div>
+    </div>
+  </div>
+</div>

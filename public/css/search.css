@@ -1,0 +1,236 @@
+.search-website{
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 50px;
+}
+.search-website-content{
+    width: 80% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    font-family: 'Roboto Slab', serif !important;
+}
+.search-website-header{
+    font-size: 25px !important;
+}
+.search-website-header p{
+    margin-bottom: 0 !important;
+}
+.search-website-bar{
+    margin-top: 30px !important;
+    width: 60% !important;
+    
+}
+.search-website-bar input{
+    width:80% !important;
+    border: 2px dashed #215732 !important;
+    padding: 10px !important;
+
+}
+.search-website-bar input:focus{
+    outline: none;
+}
+.search-website-bar button{
+
+    width: 15% !important;
+    padding: 12px !important;
+    outline: none !important;
+    border: none !important;
+    background-color: #215732 !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+.search-website-popular{
+    width: 55% !important;
+    margin-top: 20px !important;
+
+}
+.search-website-popular-header{
+    font-size: larger !important;
+}
+.search-website-popular-searches button{
+   
+    border-radius: 100px !important;
+    border: none !important;
+    padding: 8px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    background-color: #215732 !important;
+    font-size: medium !important;
+    color: white !important;
+    width: auto !important;
+
+}
+.photos-gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.photos-gallery-sub{
+    width: 80%;
+}
+
+
+
+
+
+
+footer{
+    font-weight: 600;
+    padding-top: 0px;
+    font-family: 'Roboto Slab', serif;
+}
+.website-footer-1 p{
+    margin-bottom: 0;
+}
+.website-footer-hr{
+    height: auto !important;
+    border: 1px solid #215732;
+    border-color: #215732;
+}
+
+
+.website-footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.website-footer-sub{
+    width: 90%;
+    display: flex;
+}
+.website-footer-1{
+    width: 60%;
+    
+}
+.website-footer-2{
+    width: 40%;
+    
+}
+.website-footer-1 p {
+    padding: 10px;
+    text-align: justify;
+}
+.footer-left-heading{
+    font-weight: 800;
+}
+.footer-left-subheading{
+    font-size: smaller;
+}
+.website-footer-left-bottom{
+    border: 2px dashed #215732;
+    border-radius: 10px;
+    margin: 10px;
+}
+.website-footer-left-bottom-sub{
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+}
+.website-footer-header-right{
+    font-size: small;
+    font-weight: 600;
+    margin-left: 20px;
+}
+.website-footer-email-submit{
+    margin-left: 20px;
+}
+.website-footer-email-submit input{
+    padding: 10px;
+    width: 380px;
+    border-radius: 7px;
+    border: 2px solid #215732;
+
+}
+.website-footer-email-submit input:focus{
+    
+    outline: none;
+}
+.website-footer-email-submit button{
+    padding: 13px;
+    width: 100px;
+    border: none;
+    background-color: #215732;
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    border-radius: 7px;
+
+}
+.website-footer-email-submit button:hover{
+    background-color: #ffffff;
+    color: black;
+    padding: 10px;
+    border: 2px solid #215732;
+
+}
+.website-footer-social-account {
+    font-size: small;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.website-footer-contact-details-sub{
+    font-size: small;
+    font-weight: 700;
+    
+}
+.website-footer-contact-details{
+    font-size: small;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+.website-footer-contact-details p{
+    margin-bottom: 5px;
+    
+}
+.website-footer-final-buttons{
+    margin-left: 20px;
+}
+.website-footer-final-buttons button{
+    padding: 12px;
+    margin-right: 10px;
+    border: none;
+    background-color: #215732;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 10px;
+
+}
+.website-footer-final-buttons button:hover{
+    padding: 10px;
+    border: 2px solid #215732;
+    background-color: white;
+    color: black;
+}
+
+
+
+@media screen and (max-width: 480px){
+    .website-footer-sub{
+        display: flex;
+        flex-direction: column;
+    }
+    .website-footer-1{
+        width: 100%;
+    }
+    .website-footer-2{
+        width: 100%;
+    }
+    .website-footer-email-submit input{
+        width: 200px;
+    }
+    .website-footer-final-buttons button{
+        margin-right: 0;
+    }
+    .website-footer-final-buttons{
+        margin-left: 0;
+    }
+}
